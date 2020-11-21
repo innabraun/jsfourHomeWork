@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function createNewUser() {
+        return {
+            firstName: prompt("Write your first name: "),
+            lastName: prompt("Write your second name: "),
+            getLogin() {
+                return this.firstName.charAt(0).toLowerCase() + this.lastName.toLowerCase()
+            }
+        }
+    }
+
+    console.log(createNewUser().getLogin());
+</script>
+
+</body>
+</html>
